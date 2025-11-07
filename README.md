@@ -14,7 +14,7 @@ Traditional RAG systems suffer from three critical limitations:
 
 **Fixed computational budget**: Retrieval always returns exactly $K$ documents regardless of confidence. Queries with high-confidence answers consume unnecessary computation.
 
-<img width="3564" height="1764" alt="pro_fig03_decay" src="https://github.com/user-attachments/assets/eba12c5d-96a9-4c56-827a-1dc59e844b71" />
+<img width="3564" height="1764" alt="pro_fig03_decay" src="https://github.com/user-attachments/assets/e13a8a05-6469-4499-a042-b1df9ed2967a" />
 
 ---
 
@@ -72,7 +72,7 @@ $$
 
 **Rationale for SVD over neural embeddings**: Computational determinism, reproducibility, CPU-compatibility, and empirical equivalence to BERT embeddings on mid-sized corpora (1K-100K documents).
 
-<img width="4160" height="1446" alt="pro_fig06_scaling" src="https://github.com/user-attachments/assets/a5000679-e8fb-4248-94e2-d912abcb920f" />
+<img width="4160" height="1446" alt="pro_fig06_scaling" src="https://github.com/user-attachments/assets/498066d4-5dc8-4e3b-aa6f-12679865dd0f" />
 
 ---
 
@@ -122,7 +122,7 @@ with damping factor $\lambda = 0.85$. Empirically performs similarly to degree c
 
 **Justification**: High-centrality documents are "hubs" mentioning multiple shared facts, suggesting reliability. Jaccard similarity captures semantic overlap rather than lexical similarity alone.
 
-<img width="3564" height="1769" alt="pro_fig04_scores" src="https://github.com/user-attachments/assets/6060dfaf-7724-4635-9ec3-ec0008061b30" />
+<img width="3564" height="1769" alt="pro_fig04_scores" src="https://github.com/user-attachments/assets/9befa984-e112-439d-9e78-e3a76022739e" />
 
 ---
 
@@ -227,7 +227,7 @@ Default thresholds: $\theta_m = 0.5$, $\theta_a = 0.8$.
 
 **Computation savings**: Marginal computation reduction $\sim 42\%$ for typical corpora with negligible accuracy degradation ($\Delta \text{Recall@5} \approx 0.01$).
 
-<img width="3564" height="1764" alt="pro_fig05_halting" src="https://github.com/user-attachments/assets/ae181ed6-e50c-4490-8b78-67a6cf57731b" />
+<img width="3564" height="1764" alt="pro_fig05_halting" src="https://github.com/user-attachments/assets/4ef747db-95bb-42b6-b4fc-2cf9eed54903" />
 
 ---
 
@@ -305,7 +305,7 @@ Average document budget reduction from 100 to 58 with only 1% recall degradation
 
 ### 4.5 Parameter Sensitivity Analysis
 
-<img width="4164" height="1459" alt="pro_fig08_sensitivity" src="https://github.com/user-attachments/assets/5035e464-0ad5-472a-952d-3b0531b0eca9" />
+<img width="4164" height="1459" alt="pro_fig08_sensitivity" src="https://github.com/user-attachments/assets/521360ef-5ad2-4148-8642-196c64950943" />
 
 **Delta ($\delta$) sensitivity**: Temporal accuracy increases monotonically with $\delta \in [0,5]$. Peak at $\delta=2.5$ balances temporal preference against general query performance.
 
@@ -338,7 +338,7 @@ Typical corpus (N=5K): Graph construction ≈ 2-5 minutes, query latency ≈ 100
 
 ## 6. Ablation Studies
 
-<img width="4170" height="2966" alt="pro_fig07_ablation" src="https://github.com/user-attachments/assets/9d3115a1-ece7-4500-8813-bbcf3627db99" />
+<img width="4170" height="2966" alt="pro_fig07_ablation" src="https://github.com/user-attachments/assets/103b0974-4bc4-4c86-a715-a5b17b201dc6" />
 
 **Study 1: Retrieval method comparison**
 
